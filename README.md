@@ -18,7 +18,7 @@ SerenAI E-commerce Monitor watches your online store's checkout for critical iss
 
 ### WooCommerce Plugin
 
-Download the latest release from the [Releases page](https://github.com/serenorg/serenai-ecommerce-anomaly-feeds/releases).
+Download the latest release from the [Releases page](https://github.com/serenorg/ecommerce-anomaly-feeds/releases).
 
 **Installation:**
 
@@ -95,7 +95,7 @@ For platform integrations, events are sent to:
 
 ## Support
 
-- **Issues**: [GitHub Issues](https://github.com/serenorg/serenai-ecommerce-anomaly-feeds/issues)
+- **Issues**: [GitHub Issues](https://github.com/serenorg/ecommerce-anomaly-feeds/issues)
 - **Email**: [hello@serendb.com](mailto:hello@serendb.com)
 
 ## License
