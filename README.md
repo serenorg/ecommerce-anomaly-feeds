@@ -77,8 +77,8 @@ For each checkout/order event, we collect:
 
 ### Data Retention
 
-- Raw event data: 30 days
-- Aggregated signals: 1 year
+- Raw event data: 1 year
+- Aggregated signals: 5 years
 - You can request data deletion at any time by contacting [hello@serendb.com](mailto:hello@serendb.com)
 
 ## API Endpoints
