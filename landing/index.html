@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SerenAI Anomaly Feeds - Free E-commerce Alerts</title>
+  <meta name="description" content="Get instant alerts when your Shopify or WooCommerce store experiences payment failures or checkout abandonment. Free for merchants.">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            primary: '#6366f1',
+            secondary: '#8b5cf6'
+          }
+        }
+      }
+    }
+  </script>
+</head>
+<body class="bg-gray-50">
+  <!-- Hero Section -->
+  <header class="bg-gradient-to-r from-primary to-secondary">
+    <nav class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4">
+      <div class="flex justify-between items-center">
+        <div class="text-white font-bold text-xl">SerenAI</div>
+        <div class="space-x-6">
+          <a href="#features" class="text-white/80 hover:text-white">Features</a>
+          <a href="#integrate" class="text-white/80 hover:text-white">Integrate</a>
+          <a href="#api" class="text-white/80 hover:text-white">API</a>
+          <a href="#contact" class="bg-white text-primary px-4 py-2 rounded-lg font-medium hover:bg-gray-100">Get Started</a>
+        </div>
+      </div>
+    </nav>
+
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24 text-center">
+      <h1 class="text-4xl sm:text-5xl font-bold text-white mb-6">
+        Know When Your Store Has Problems<br>
+        <span class="text-white/80">Before Your Customers Tell You</span>
+      </h1>
+      <p class="text-xl text-white/90 mb-8 max-w-2xl mx-auto">
+        Free real-time alerts for payment failures, checkout abandonment, and recovery events.
+        Works with Shopify and WooCommerce.
+      </p>
+      <div class="flex justify-center gap-4">
+        <a href="#integrate" class="bg-white text-primary px-8 py-3 rounded-lg font-semibold hover:bg-gray-100 transition">
+          Install Now - It's Free
+        </a>
+        <a href="#features" class="border-2 border-white text-white px-8 py-3 rounded-lg font-semibold hover:bg-white/10 transition">
+          Learn More
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Features Section -->
+  <section id="features" class="py-20 bg-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <h2 class="text-3xl font-bold text-center text-gray-900 mb-4">What We Detect</h2>
+      <p class="text-gray-600 text-center mb-12 max-w-2xl mx-auto">
+        Our anomaly detection monitors your store 24/7 and alerts you instantly when something goes wrong.
+      </p>
+
+      <div class="grid md:grid-cols-3 gap-8">
+        <!-- Payment Failures -->
+        <div class="bg-gray-50 rounded-xl p-8">
+          <div class="w-12 h-12 bg-red-100 rounded-lg flex items-center justify-center mb-4">
+            <svg class="w-6 h-6 text-red-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4m0 4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+            </svg>
+          </div>
+          <h3 class="text-xl font-semibold text-gray-900 mb-2">Payment Gateway Failures</h3>
+          <p class="text-gray-600 mb-4">
+            Get alerted when your payment failure rate exceeds 40% in a 5-minute window.
+            Could indicate a gateway outage or configuration issue.
+          </p>
+          <div class="text-sm text-gray-500">
+            Threshold: 40% failure rate, min 5 transactions
+          </div>
+        </div>
+
+        <!-- Checkout Abandonment -->
+        <div class="bg-gray-50 rounded-xl p-8">
+          <div class="w-12 h-12 bg-yellow-100 rounded-lg flex items-center justify-center mb-4">
+            <svg class="w-6 h-6 text-yellow-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z"></path>
+            </svg>
+          </div>
+          <h3 class="text-xl font-semibold text-gray-900 mb-2">Checkout Abandonment Spike</h3>
+          <p class="text-gray-600 mb-4">
+            Notified when customers start checkout but none complete.
+            May indicate a broken checkout flow or pricing issue.
+          </p>
+          <div class="text-sm text-gray-500">
+            Threshold: 0% completion, min 10 checkouts in 15 min
+          </div>
+        </div>
+
+        <!-- Recovery -->
+        <div class="bg-gray-50 rounded-xl p-8">
+          <div class="w-12 h-12 bg-green-100 rounded-lg flex items-center justify-center mb-4">
+            <svg class="w-6 h-6 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+            </svg>
+          </div>
+          <h3 class="text-xl font-semibold text-gray-900 mb-2">Recovery Alerts</h3>
+          <p class="text-gray-600 mb-4">
+            Know when the issue is resolved. We'll notify you when payment success rates
+            return to normal or orders start completing again.
+          </p>
+          <div class="text-sm text-gray-500">
+            Auto-detected when metrics normalize
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- How It Works -->
+  <section class="py-20 bg-gray-50">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <h2 class="text-3xl font-bold text-center text-gray-900 mb-12">How It Works</h2>
+
+      <div class="grid md:grid-cols-3 gap-8">
+        <div class="text-center">
+          <div class="w-16 h-16 bg-primary text-white rounded-full flex items-center justify-center text-2xl font-bold mx-auto mb-4">1</div>
+          <h3 class="text-xl font-semibold text-gray-900 mb-2">Install the App</h3>
+          <p class="text-gray-600">Add our Shopify app or WooCommerce plugin to your store. Takes less than 2 minutes.</p>
+        </div>
+
+        <div class="text-center">
+          <div class="w-16 h-16 bg-primary text-white rounded-full flex items-center justify-center text-2xl font-bold mx-auto mb-4">2</div>
+          <h3 class="text-xl font-semibold text-gray-900 mb-2">We Monitor Events</h3>
+          <p class="text-gray-600">Our system receives checkout and order events in real-time and analyzes them for anomalies.</p>
+        </div>
+
+        <div class="text-center">
+          <div class="w-16 h-16 bg-primary text-white rounded-full flex items-center justify-center text-2xl font-bold mx-auto mb-4">3</div>
+          <h3 class="text-xl font-semibold text-gray-900 mb-2">Get Instant Alerts</h3>
+          <p class="text-gray-600">Receive email or webhook notifications the moment we detect a problem with your store.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Integration Section -->
+  <section id="integrate" class="py-20 bg-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <h2 class="text-3xl font-bold text-center text-gray-900 mb-4">Choose Your Platform</h2>
+      <p class="text-gray-600 text-center mb-12">Install in minutes. No code required.</p>
+
+      <div class="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+        <!-- Shopify -->
+        <div class="border-2 border-gray-200 rounded-xl p-8 hover:border-primary transition">
+          <div class="flex items-center mb-4">
+            <svg class="w-10 h-10 text-green-600" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M15.337 3.415c-.134-.093-.27-.14-.405-.14-.27 0-.54.187-.675.467l-.944 1.96-2.024-.374c-.27-.047-.54.047-.742.28-.203.233-.27.56-.203.84l.54 2.054-1.89.84c-.27.14-.472.374-.54.654-.067.28 0 .56.203.793l1.485 1.587-.944 1.867c-.135.28-.135.56 0 .84.135.233.338.42.607.467l2.024.373.405 2.054c.067.28.27.513.54.653.135.047.27.094.405.094.135 0 .27-.047.405-.094l1.754-1.12 1.62 1.307c.203.14.472.187.742.14.27-.047.472-.233.607-.467l.944-1.96 2.024.373c.27.047.54-.047.742-.28.203-.233.27-.56.203-.84l-.54-2.053 1.89-.84c.27-.14.472-.374.54-.654.067-.28 0-.56-.203-.793l-1.485-1.587.944-1.867c.135-.28.135-.56 0-.84-.135-.233-.338-.42-.607-.467l-2.024-.373-.405-2.054c-.067-.28-.27-.513-.54-.653z"/>
+            </svg>
+            <span class="text-2xl font-bold text-gray-900 ml-3">Shopify</span>
+          </div>
+          <p class="text-gray-600 mb-6">
+            Install from the Shopify App Store. OAuth authentication, automatic webhook setup,
+            and instant alerts.
+          </p>
+          <ul class="text-gray-600 mb-6 space-y-2">
+            <li class="flex items-center">
+              <svg class="w-5 h-5 text-green-500 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+              </svg>
+              One-click install
+            </li>
+            <li class="flex items-center">
+              <svg class="w-5 h-5 text-green-500 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+              </svg>
+              Auto webhook registration
+            </li>
+            <li class="flex items-center">
+              <svg class="w-5 h-5 text-green-500 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+              </svg>
+              Works with Shopify Plus
+            </li>
+          </ul>
+          <a href="#" class="block w-full bg-green-600 text-white text-center py-3 rounded-lg font-semibold hover:bg-green-700 transition">
+            Install Shopify App
+          </a>
+        </div>
+
+        <!-- WooCommerce -->
+        <div class="border-2 border-gray-200 rounded-xl p-8 hover:border-primary transition">
+          <div class="flex items-center mb-4">
+            <svg class="w-10 h-10 text-purple-600" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 17.93c-3.95-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v1c0 1.1.9 2 2 2v1.93zm6.9-2.54c-.26-.81-1-1.39-1.9-1.39h-1v-3c0-.55-.45-1-1-1H8v-2h2c.55 0 1-.45 1-1V7h2c1.1 0 2-.9 2-2v-.41c2.93 1.19 5 4.06 5 7.41 0 2.08-.8 3.97-2.1 5.39z"/>
+            </svg>
+            <span class="text-2xl font-bold text-gray-900 ml-3">WooCommerce</span>
+          </div>
+          <p class="text-gray-600 mb-6">
+            Download our WordPress plugin. Simple setup wizard, works with any WooCommerce store.
+          </p>
+          <ul class="text-gray-600 mb-6 space-y-2">
+            <li class="flex items-center">
+              <svg class="w-5 h-5 text-green-500 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+              </svg>
+              Upload and activate
+            </li>
+            <li class="flex items-center">
+              <svg class="w-5 h-5 text-green-500 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+              </svg>
+              WooCommerce 7.0+ supported
+            </li>
+            <li class="flex items-center">
+              <svg class="w-5 h-5 text-green-500 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+              </svg>
+              WordPress multisite ready
+            </li>
+          </ul>
+          <a href="#" class="block w-full bg-purple-600 text-white text-center py-3 rounded-lg font-semibold hover:bg-purple-700 transition">
+            Download WooCommerce Plugin
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- API Section -->
+  <section id="api" class="py-20 bg-gray-900 text-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <h2 class="text-3xl font-bold text-center mb-4">API Reference</h2>
+      <p class="text-gray-400 text-center mb-12">For developers building custom integrations</p>
+
+      <div class="max-w-3xl mx-auto">
+        <div class="bg-gray-800 rounded-xl p-6 mb-6">
+          <div class="flex items-center mb-4">
+            <span class="bg-green-600 text-xs font-bold px-2 py-1 rounded mr-3">POST</span>
+            <code class="text-gray-300">/events</code>
+          </div>
+          <p class="text-gray-400 mb-4">Send checkout and order events from your platform.</p>
+          <pre class="bg-gray-900 rounded p-4 text-sm overflow-x-auto"><code class="text-gray-300">{
+  "shop_id": "my-store.myshopify.com",
+  "source_platform": "shopify",
+  "event_type": "order_created",
+  "financial_status": "paid",
+  "order_total": 99.99,
+  "timestamp": "2024-12-04T12:00:00Z"
+}</code></pre>
+        </div>
+
+        <div class="bg-gray-800 rounded-xl p-6 mb-6">
+          <div class="flex items-center mb-4">
+            <span class="bg-blue-600 text-xs font-bold px-2 py-1 rounded mr-3">POST</span>
+            <code class="text-gray-300">/merchants</code>
+          </div>
+          <p class="text-gray-400 mb-4">Register your store to receive alerts.</p>
+          <pre class="bg-gray-900 rounded p-4 text-sm overflow-x-auto"><code class="text-gray-300">{
+  "shop_id": "my-store.myshopify.com",
+  "platform": "shopify",
+  "email": "alerts@mystore.com",
+  "webhook_url": "https://mystore.com/webhooks/serenai"
+}</code></pre>
+        </div>
+
+        <div class="bg-gray-800 rounded-xl p-6">
+          <div class="flex items-center mb-4">
+            <span class="bg-yellow-600 text-xs font-bold px-2 py-1 rounded mr-3">GET</span>
+            <code class="text-gray-300">/health</code>
+          </div>
+          <p class="text-gray-400">Check API availability.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="py-20 bg-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+      <h2 class="text-3xl font-bold text-gray-900 mb-4">Ready to Protect Your Store?</h2>
+      <p class="text-gray-600 mb-8 max-w-2xl mx-auto">
+        Join thousands of e-commerce stores using SerenAI to catch problems before they cost you sales.
+      </p>
+      <div class="flex justify-center gap-4 flex-wrap">
+        <a href="#integrate" class="bg-primary text-white px-8 py-3 rounded-lg font-semibold hover:bg-primary/90 transition">
+          Get Started Free
+        </a>
+        <a href="mailto:support@serenai.com" class="border-2 border-gray-300 text-gray-700 px-8 py-3 rounded-lg font-semibold hover:border-gray-400 transition">
+          Contact Support
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-gray-900 text-gray-400 py-12">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid md:grid-cols-4 gap-8">
+        <div>
+          <div class="text-white font-bold text-xl mb-4">SerenAI</div>
+          <p class="text-sm">Real-time anomaly detection for e-commerce stores.</p>
+        </div>
+        <div>
+          <h4 class="text-white font-semibold mb-4">Product</h4>
+          <ul class="space-y-2 text-sm">
+            <li><a href="#features" class="hover:text-white">Features</a></li>
+            <li><a href="#integrate" class="hover:text-white">Integrations</a></li>
+            <li><a href="#api" class="hover:text-white">API Docs</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="text-white font-semibold mb-4">Platforms</h4>
+          <ul class="space-y-2 text-sm">
+            <li><a href="#" class="hover:text-white">Shopify App</a></li>
+            <li><a href="#" class="hover:text-white">WooCommerce Plugin</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="text-white font-semibold mb-4">Support</h4>
+          <ul class="space-y-2 text-sm">
+            <li><a href="mailto:support@serenai.com" class="hover:text-white">support@serenai.com</a></li>
+            <li><a href="https://github.com/serenorg" class="hover:text-white">GitHub</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="border-t border-gray-800 mt-8 pt-8 text-center text-sm">
+        &copy; 2024 SerenAI Inc. All rights reserved.
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
