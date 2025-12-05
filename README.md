@@ -49,6 +49,38 @@ Coming soon to the Shopify App Store.
 | Checkout Abandonment | 0% completion rate | 15 minutes |
 | Recovery | <20% failure rate | After anomaly |
 
+## Data Collection & Privacy
+
+### What We Collect
+
+For each checkout/order event, we collect:
+
+- **Store identifier** (e.g., `my-store.myshopify.com`)
+- **Order totals** (transaction amounts)
+- **Order counts** (number of transactions)
+- **Payment status** (success/failure)
+- **Timestamps**
+
+### What We DO NOT Collect
+
+- Customer names, emails, or contact information
+- Shipping or billing addresses
+- Payment card numbers or financial details
+- Product details or SKUs
+- Any personally identifiable information (PII)
+
+### How We Use Your Data
+
+1. **Anomaly Detection** - We analyze transaction patterns to detect payment failures and checkout abandonment in real-time
+2. **Alerting** - We send alerts only to the email address you configure
+3. **Aggregate Marketplace Signals** - Transaction data is anonymized and aggregated across merchants (with k-anonymity protections) to provide marketplace insights
+
+### Data Retention
+
+- Raw event data: 30 days
+- Aggregated signals: 1 year
+- You can request data deletion at any time by contacting [hello@serendb.com](mailto:hello@serendb.com)
+
 ## API Endpoints
 
 For platform integrations, events are sent to:
